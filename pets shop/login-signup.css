@@ -24,7 +24,7 @@ body {
     right: 0;
     display: flex;
     align-items: center;
-    color: coral;
+    color: #f4b251;
     font-weight: bold;
     z-index: 1;
     background: white;
@@ -64,8 +64,7 @@ form {
     left: -250%;
     width: 300%;
     height: 100%;
-    background: coral;
-    /*border: 2px solid #c8d9e6;*/
+    background: #f4b251;
     border-radius: 150px;
     z-index: 2;
     transition: 1s ease-in-out;

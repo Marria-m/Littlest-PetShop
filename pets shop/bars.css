@@ -1,6 +1,5 @@
-/*side/navigation bar*/
 #logo {
-    color: #f5efeb;
+    color: #f4b251;
     position: fixed;
     left: 2%;
     top: 0;
@@ -9,11 +8,8 @@
     margin: 0.7%;
 }
 
-/* Navigation */
 .navigation {
-    background-color:#1a2a44;
-    padding: 1% 1%;
-    color: #f5efeb;
+    background-color:#a4485e;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -40,11 +36,14 @@
 }
 
 .navigation a {
-    color: #f5efeb;
+    color: #f4b251;
     text-decoration: none;
     font-size: 18px;
 }
 
+.ul{
+    right: 1%;
+}
 /* Dropdown container */
 ul li.dropdown {
     position: relative;
@@ -54,16 +53,17 @@ ul li.dropdown {
 ul li .dropdown-content {
     display: none;
     position: absolute;
-    background-color:#1a2a44;
-    width: 210px;
+    background-color:#a4485e;
+    width: 100px;
     z-index: 2;
+    right: 2%;
 }
 
 /* Dropdown items */
 ul li .dropdown-content li a {
     display: block;
     padding: 5px;
-    color: #f5efeb;
+    color: #f4b251;
 }
 
 ul li .dropdown-content li a:hover {
@@ -94,14 +94,13 @@ ul li.dropdown:hover .dropdown-content {
 
 
 .footer {
-    background-color:#1a2a44;
+    background-color:#a4485e;
     text-align: center;
-    padding: 0.5%;
     font-size: 14px;
-    color: #f5efeb;
+    color: #f4b251;
     position: fixed;
     bottom: 0;
-    width: 100%;
+    width: 110%;
     z-index: 9999;
 }
 
