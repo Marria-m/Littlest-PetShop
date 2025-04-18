@@ -1,37 +1,85 @@
 /*side/navigation bar*/
-#logo{
-    color: coral;
+#logo {
+    color: #f5efeb;
     position: fixed;
-    left: 10%;
+    left: 2%;
     top: 0;
     font-size: 28px;
     font-weight: normal;
     margin: 0.7%;
 }
 
-.sidebar {
-    width: 250px;
-    color: coral;
-    background-color: #a4005e;
-    height: 90%;
+/* Navigation */
+.navigation {
+    background-color:#1a2a44;
+    padding: 1% 1%;
+    color: #f5efeb;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     position: fixed;
-    left: -100%;
-    top: 7%;
-    z-index: 9999;
-}
-
-.sidebar.active {
+    top: 0;
     left: 0;
+    width: 100%;
+    height: 50px;
+    z-index: 1000;
 }
 
-.sidebar-icon {
+.navigation ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    position: relative;
+    width: 100%;
+}
+
+.navigation li {
+    margin: 0 1%;
+}
+
+.navigation a {
+    color: #f5efeb;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Dropdown container */
+ul li.dropdown {
+    position: relative;
+}
+
+/* Hide the dropdown content by default */
+ul li .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:#1a2a44;
+    width: 210px;
+    z-index: 2;
+}
+
+/* Dropdown items */
+ul li .dropdown-content li a {
+    display: block;
+    padding: 5px;
+    color: #f5efeb;
+}
+
+ul li .dropdown-content li a:hover {
+    background: transparent;
+    box-shadow: 0px 15px 20px #f5efeb;
+}
+
+/* Show the dropdown on hover */
+ul li.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.profile {
     position: fixed;
-    left: 15px;
-}
-
-.sidebar-icon img {
-    width: 40px;
-    height: 40px;
+    right: .5%;
+    margin: 2%;
 }
 
 .cart-icon {
@@ -44,63 +92,32 @@
     height: 40px;
 }
 
-/* Navigation */
-.navigation {
-    background-color: #a4005e;
-    padding: 1% 1%;
-    color: coral;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 25px;
-    z-index: 1000;
-}
-
-.navigation ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: bold;
-    position: relative;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-}
-
-.navigation li {
-    margin: 0 1%;
-}
-
-.navigation a {
-    color: coral;
-    text-decoration: none;
-    font-size: 18px;
-}
-
-.profile {
-    position: fixed;
-    right: 2%;
-    margin:2%;
-}
 
 .footer {
-    background-color: #a4005e;
+    background-color:#1a2a44;
     text-align: center;
     padding: 0.5%;
     font-size: 14px;
-    color: coral;
+    color: #f5efeb;
     position: fixed;
     bottom: 0;
     width: 100%;
     z-index: 9999;
 }
 
-img{
-    height: 30px;
-    width: 30px;
+img {
+    height: 35px;
+    width: 35px;
+}
+
+.login-link{
+    position: fixed;
+    right: 2%;
+    margin: 2%;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+a:hover {
+    box-shadow: 0px 15px 20px #f5efeb;
 }
